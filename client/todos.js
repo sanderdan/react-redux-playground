@@ -11,7 +11,7 @@ const router = (
   <Router history={browserHistory}>
     <Route path="/" component={Main}>
       <IndexRoute component={TaskList}></IndexRoute>
-      <Route path="/view/:taskId" component={SingleTask}></Route>
+      <Route path="/task/:taskId" component={SingleTask}></Route>
     </Route>
   </Router>
 )
