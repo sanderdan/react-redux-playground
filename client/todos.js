@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-import Main from './components/Main';
+import App from './components/App';
 import SingleTask from './components/SingleTask';
 import TaskList from './components/TaskList';
 
@@ -13,7 +13,7 @@ import store, { history } from './store';
 const router = (
   <Provider store={store}>
     <Router history={browserHistory}>
-      <Route path="/" component={Main}>
+      <Route path="/" component={App}>
         <IndexRoute component={TaskList}></IndexRoute>
         <Route path="/task/:taskId" component={SingleTask}></Route>
       </Route>
