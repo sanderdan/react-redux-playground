@@ -1,13 +1,14 @@
 import React from 'react';
+import Task from './Task';
 
 const TaskList = React.createClass({
-  render () {
+  render() {
     return (
-      <div className="task-list">
-      I'm the task list
+      <div>
+        {this.props.tasks.map((task, i) => <Task />)}
       </div>
     )
   }
-})
+});
 
 export default TaskList;
