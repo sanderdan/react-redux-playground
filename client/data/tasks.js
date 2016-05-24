@@ -71,4 +71,6 @@ const tasks = [
     "isActive": false,
     "picture": "http://placehold.it/32x32"
   }
-]
+];
+
+export default tasks;

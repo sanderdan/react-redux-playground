@@ -6,7 +6,6 @@ import rootReducer from './reducers/index';
 
 import tasks from './data/tasks';
 
-
 const defaultState = {
   tasks
 };

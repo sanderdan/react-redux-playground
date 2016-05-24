@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 const Main = React.createClass({
   render () {
     return (
-      <div>
+      <div className="container">
         <h1>
           <Link to="/">ToDos</Link>
           {React.cloneElement(this.props.children, this.props)}
