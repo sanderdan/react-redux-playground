@@ -4,7 +4,6 @@ import { Link } from 'react-router';
 const Task = React.createClass({
 
   renderLink(task){
-
     const taskStyle = {
       color: task.isActive ? '#388e3c' : '#b71c1c'
     };
@@ -18,7 +17,6 @@ const Task = React.createClass({
 
   render() {
     const {task, i }= this.props;
-    console.log();
     return (
       <div className="col s1">
         {this.renderLink(task)}
