@@ -1,5 +1,5 @@
 import React from 'react';
-import Task from './task';
+import Task from './Task';
 
 const SingleTask = React.createClass({
 
@@ -8,7 +8,6 @@ const SingleTask = React.createClass({
   },
 
   render () {
-
     const { taskId } = this.props.params;
     const i = this.props.tasks.findIndex((task) => task.id === taskId);
 
@@ -17,8 +16,8 @@ const SingleTask = React.createClass({
     return (
       <div className="container">
         <h1>{task.title}</h1>
-        <img src={task.picture} />
-        <p>Is the task done? {this.isTaskCompleted(task)}</p>
+        <img src={task.picture}/>
+        <p>Is this task done? {this.isTaskCompleted(task)}</p>
       </div>
     )
   }
