@@ -5,7 +5,10 @@ const CreateTask = React.createClass ({
 
 	handleSubmit(e){
 		e.preventDefault();
-
+		const title = this.refs.title.value;
+		const picture = this.refs.picture.value;
+		console.log("title: " + title + " picture: " + picture);
+		this.refs.taskForm.reset();
 	},
 
 	render() {
@@ -13,7 +16,7 @@ const CreateTask = React.createClass ({
 			<form onSubmit={this.handleSubmit} ref="taskForm">
 				<input type="text" ref="title" placeholder="Title" />
 				<input type="text" ref="picture" placeholder="Image url" />
-				<input type="checkbox" ref="status" />
+				<input type="submit" hidden />
 			</form>
 
 		);
